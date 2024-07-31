@@ -1,0 +1,24 @@
+@startuml
+interface Observer {
+    + update()
+}
+
+class Subject {
+    - observers: List<Observer>
+    + register(o: Observer)
+    + unregister(o: Observer)
+    + notify()
+}
+
+class ConcreteObserver1 {
+    + update()
+}
+
+class ConcreteObserver2 {
+    + update()
+}
+
+Subject -> Observer : <<notify>>
+Observer <|-- ConcreteObserver1
+Observer <|-- ConcreteObserver2
+@enduml

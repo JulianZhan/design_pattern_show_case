@@ -1,0 +1,12 @@
+@startuml
+class Singleton {
+    + getInstance(): Singleton
+    + doSomething()
+}
+
+class Client {
+    + useSingleton()
+}
+
+Client -> Singleton : getInstance()
+@enduml
