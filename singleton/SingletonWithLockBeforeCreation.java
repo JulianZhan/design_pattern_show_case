@@ -1,4 +1,4 @@
-package SingletonDemo;
+package singleton;
 
 public class SingletonWithLockBeforeCreation {
     private static SingletonWithLockBeforeCreation instance;

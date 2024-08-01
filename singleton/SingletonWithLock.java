@@ -1,4 +1,4 @@
-package SingletonDemo;
+package singleton;
 
 public class SingletonWithLock {
     private static SingletonWithLock instance;
